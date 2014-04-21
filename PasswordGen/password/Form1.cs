@@ -116,6 +116,7 @@ namespace password
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //USED FOR HWID PROTECTION. 
             string cpuInfo = string.Empty;
             ManagementClass mc = new ManagementClass("win32_processor");
             ManagementObjectCollection moc = mc.GetInstances();
